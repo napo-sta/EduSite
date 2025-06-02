@@ -11,6 +11,26 @@ body, html {
   background-size: cover;
 }
 
+
+.notebooklm-button {
+  display: inline-block;
+  background-color: #1a73e8;
+  color: white;
+  padding: 12px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.notebooklm-button:hover {
+  background-color: #1558b0;
+}
+
+
 header {
   background: rgba(0, 0, 0, 0.7);
   padding: 1rem 2rem;
