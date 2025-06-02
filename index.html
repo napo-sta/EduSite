@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>ÉduSite - Plateforme Éducative</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>ÉduSite</h1>
+    <nav>
+      <a href="#" onclick="showSection('accueil')">Accueil</a>
+      <a href="#" onclick="showSection('video')">Vidéo</a>
+      <a href="#" onclick="showSection('graphique')">Graphique</a>
+      <a href="#" onclick="showSection('ressources')">Ressources</a>
+      <a href="#" onclick="showSection('quiz')">Quiz</a>
+      <a href="#" onclick="showSection('contact')">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section id="accueil" class="active">
+      <h2>Bienvenue sur ÉduSite</h2>
+      <p>Ce site est dédié à l’éducation, à l’apprentissage interactif et au partage de savoirs.</p>
+    </section>
+    <section id="video">
+      <h2>Vidéos éducatives</h2>
+      <div class="video-gallery">
+        <div class="video-container"><iframe src="https://www.youtube.com/embed/FWf7NXLjx9c?start=17" allowfullscreen></iframe></div>
+        <div class="video-container"><iframe src="https://www.youtube.com/embed/xOUhRk1Cr5o" allowfullscreen></iframe></div>
+        <div class="video-container"><iframe src="https://www.youtube.com/embed/SRhTSzcxcCs?start=17" allowfullscreen></iframe></div>
+        <div class="video-container"><iframe src="https://www.youtube.com/embed/kqtD5dpn9C8" allowfullscreen></iframe></div>
+        <div class="video-container"><iframe src="https://www.youtube.com/embed/rfscVS0vtbw" allowfullscreen></iframe></div>
+      </div>
+    </section>
+    <section id="graphique">
+      <h2>Graphique interactif</h2>
+      <canvas id="myChart" width="600" height="400"></canvas>
+    </section>
+    <section id="ressources">
+      <h2>Ressources téléchargeables</h2>
+      <a href="docs/Durée 15 minECM.pdf" download style="color: yellow;">📥 Télécharger le cours</a>
+    </section>
+    <section id="quiz">
+      <h2>Quiz - Teste tes connaissances</h2>
+      <form id="quizForm">
+        <p>1. Quelle est la formule de la régression linéaire ?</p>
+        <label><input type="radio" name="q1" value="0"> y = a + b × x²</label><br>
+        <label><input type="radio" name="q1" value="1"> y = w × x + b</label><br>
+        <p>2. Que signifie MSE ?</p>
+        <label><input type="radio" name="q2" value="0"> Maximum Squared Error</label><br>
+        <label><input type="radio" name="q2" value="1"> Mean Squared Error</label><br>
+        <button type="button" onclick="checkQuiz()">Valider</button>
+      </form>
+      <p id="quizResult" style="font-weight: bold;"></p>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <form>
+        <input type="text" id="name" placeholder="Votre nom" required />
+        <input type="email" id="email" placeholder="votre@email.com" required />
+        <textarea id="message" rows="5" placeholder="Votre message..." required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/chart.js" defer></script>
+  <script src="js/quiz.js" defer></script>
+</body>
+</html>

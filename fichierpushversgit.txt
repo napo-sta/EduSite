@@ -1,0 +1,20 @@
+https://github.com/napo-sta/-tude-.git
+
+
+
+
+# Initialiser le dépôt local
+git init
+
+# Ajouter tous les fichiers
+git add .
+
+# Premier commit
+git commit -m "Initialisation du projet ÉduSite"
+
+# Ajouter l'origine (remplacez par votre URL de dépôt GitHub)
+git remote add origin https://github.com/napo-sta/-tude-.git/EduSite.git
+
+# Pousser sur GitHub
+git branch -M main
+git push -u origin main

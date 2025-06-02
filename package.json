@@ -1,0 +1,11 @@
+{
+  "name": "edusite",
+  "version": "1.0.0",
+  "description": "Site \u00e9ducatif interactif avec vid\u00e9os, quiz, graphique et ressources.",
+  "scripts": {
+    "start": "serve ."
+  },
+  "dependencies": {
+    "serve": "^14.2.0"
+  }
+}
